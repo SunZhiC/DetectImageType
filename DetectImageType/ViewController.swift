@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     
     func testCase3() {
         if let path = Bundle.main.path(forResource: "dogdog_webp", ofType: "webp") {
-            let type = Data.detectImageType(fileURLWithPath: path)
+            let type = Data.detectImageType(with: path)
             print("image name = dogdog_webp.webp, type = \(type)")
         }
     }
